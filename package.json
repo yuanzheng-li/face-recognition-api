@@ -11,14 +11,16 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
-    "clarifai": "^2.7.1",
-    "cors": "^2.8.4",
-    "dotenv": "^6.0.0",
-    "express": "^4.16.3",
-    "knex": "^0.14.6",
-    "pg": "^7.4.3"
+    "clarifai": "^2.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "pg": "^7.8.0"
   },
   "devDependencies": {
-    "nodemon": "^1.17.5"
+    "eslint": "^5.12.1",
+    "nodemon": "^1.18.9",
+    "prettier-eslint": "^8.8.2"
   }
 }

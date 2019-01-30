@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  face-detection-api:
+    container_name: face-detection-api-container
+    build: ./
+    command: npm start
+    working_dir: /Users/zheng/Files/face-recognition-brain-api
+    environment:
+      POSTGRES_URI: postgres://yuan:pass@postgres:5432/face-detection
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./:/Users/zheng/Files/face-recognition-brain-api
+  
+  postgres:
+    container_name: postgres-container
+    build: ./postgres
+    environment:
+      POSTGRES_USER: yuan
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: face-detection
+      POSTGRES_HOST: postgres
+    ports:
+      - "5432:5432"

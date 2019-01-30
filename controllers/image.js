@@ -1,6 +1,6 @@
 require('../load-env');
 
-const Clarifai = require('Clarifai');
+const Clarifai = require('clarifai');
 
 const clarifaiApp = new Clarifai.App({
   apiKey: process.env.CLARIFAI_API_KEY
